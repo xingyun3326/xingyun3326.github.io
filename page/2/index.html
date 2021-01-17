@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xingyun3326.github.io">
-  <title>Archives: 2021/1 | xingyun</title>
+  <title>xingyun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="xingyun">
-<meta property="og:url" content="http://xingyun3326.github.io/archives/2021/01/index.html">
+<meta property="og:url" content="http://xingyun3326.github.io/page/2/index.html">
 <meta property="og:site_name" content="xingyun">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -158,74 +158,120 @@
           <div id="js-content" class="content-ll">
             
   
-  
+    <article id="post-11-29" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/15/test-my-site/" class="archive-article-date">
-  	<time datetime="2021-01-15T10:04:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/15/test-my-site/">test_my_site</a>
+      <a class="article-title" href="/2020/11/29/11-29/">第一篇文章——hexo搭建</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/15/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-15T10:02:18.633Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-15</time>
+        
+        <a href="/2020/11/29/11-29/" class="archive-article-date">
+  	<time datetime="2020-11-29T11:42:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-29</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/15/hello-world/">Hello World</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><h2 id="如何搭建博客"><a href="#如何搭建博客" class="headerlink" title="如何搭建博客"></a>如何搭建博客</h2><h3 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1.安装Git"></a>1.安装Git</h3><p>windows：到git官网上下载,<a target="_blank" rel="noopener" href="https://gitforwindows.org/">git for windows</a>.下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。</p>
+<p>linux：对linux来说实在是太简单了，因为最早的git就是在linux上编写的，只需要一行代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+<p>其实直接在软件管家里面也可以下载，而且更加方便。</p>
+<h3 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">下载地址</a><br>可以根据不通电脑选择不同的版本来下载。Windows选择LTS就可。<br>Linux：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure>
+<p>安装之后</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>可以查看是否安装成功。</p>
+<h3 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h3><p>创建一个空的文件夹，例如blog，在里面右键点击打开git bash here<br>然后输入命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装之后,初始化hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br></pre></td></tr></table></figure>
+<p>这个命令中myblog是自己取的名字</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> myblog //进入这个myblog文件夹</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>或者在这个myblog文件夹里面打开git bash<br>hexo server或者hexo s命令，即启动本地hexo，然后在浏览器打开localhost:4000，即可看到自己的博客，此时的博客还只能由自己在本地启动hexo s 自己查看，别人是看不到你的博客的。</p>
+<h3 id="4-GitHub创建个人仓库"><a href="#4-GitHub创建个人仓库" class="headerlink" title="4.GitHub创建个人仓库"></a>4.GitHub创建个人仓库</h3><p>注册GitHub的账户<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>.<br>注册之后选择New repository，即创建新仓库。仓库的名字为GitHub的用户名加上<code>.github.io</code><br>点击create repository。</p>
+<h3 id="5-生成SSH添加到GitHub"><a href="#5-生成SSH添加到GitHub" class="headerlink" title="5.生成SSH添加到GitHub"></a>5.生成SSH添加到GitHub</h3><p>在自己创建的myblog中打开git bash，输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure>
+<p>这个命令用来检验是否成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+<p>然后创建SSH，输入下列命令，连续回车。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure>
+<p>在电脑中找到.ssh的文件夹，打开之后用记事本打开<code>id_rsa.pub</code>复制所有里面内容，粘贴到<code>GitHub</code>的 <code>setting</code>的 <code>SSH keys</code> 的<code>New SSH key</code>里面，<br>代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>可以检查是否成功。</p>
+<h3 id="6-将hexo部署到GitHub、"><a href="#6-将hexo部署到GitHub、" class="headerlink" title="6.将hexo部署到GitHub、"></a>6.将hexo部署到GitHub、</h3><p>哇，终于最后一步了<br>在myblog文件夹里面，记事本打开<code>_config.yml</code>（站点配置文件），在最后修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/YourgithubName/YourgithubName.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>输入命令，安装deploy-git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>再</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>最后输入代码之后应该会出现一个窗口，让你输入GitHub用户名（或注册使用的邮箱）和密码。注意别错过了哟！别输错哟！<br><code>http://yourname.github.io</code>打开这个网址就可以让别人也能查看你的博客了哦！<code>yourname</code>即用户名。<br>7.个性化设置<br>这就需要选择主题了,<a target="_blank" rel="noopener" href="https://hexo.io/themes/">主题</a><br>选择你喜欢的主题然后下载code，解压到themes文件里面<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/DR2ItU"><img src="https://img-blog.csdnimg.cn/img_convert/1e9312d08162fa1380b7ecfef6153f52.png" alt="DR2ItU.png"></a><br>然后在_config.yml中找到theme将后面的主题名字改为你所下载的主题的名字，即所下载的主题那个文件夹的名字。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/DRRu9g"><img src="https://img-blog.csdnimg.cn/img_convert/fe8f429a157c34f8100ba447adf2053d.png" alt="DRRu9g.png"></a><br><a target="_blank" rel="noopener" href="https://imgchr.com/i/DRRK3Q"><img src="https://img-blog.csdnimg.cn/img_convert/66e706465ba23623b4db0e20f0dca6d5.png" alt="DRRK3Q.png"></a><br>之后在Git Bash中输入<code>hexo clean &amp;&amp; hexo g -d</code>即可。然后就更改完毕。</p>
+<h2 id="如何上传博客"><a href="#如何上传博客" class="headerlink" title="如何上传博客"></a>如何上传博客</h2><p>红色方框里的内容为在git bash输入的内容，红色下划线的内容为所创建的文章的路径。<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/DRD7qO"><img src="https://img-blog.csdnimg.cn/img_convert/cdf80622726895e7cb5ab8513aa7c752.png" alt="DRD7qO.png"></a></p>
+<p>2.编辑文章。<br>这就需要用到md文件的编辑方法了，分享一个md文件的编辑方法的网站     ，<a target="_blank" rel="noopener" href="https://blog.csdn.net/renlzrz/article/details/83545521">点这个</a>.</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/11/29/11-29/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
           </div>
@@ -247,9 +293,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
-		isArchive: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
