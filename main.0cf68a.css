@@ -2,7 +2,7 @@
 
 
 
-/*分类页面*/
+
 .category-count {
 	text-align:center;
 	line-height:3;
@@ -48,5 +48,12 @@
 	-webkit-transition:width .3s ease;
 	transition:width .3s ease
 }
-/*-------------*/
 
+
+
+.declare {
+  background-color: #eaeaea;
+  margin-top: 2em;
+  border-left: 3px solid #ff1700;
+  padding: .5em 1em; 
+}
