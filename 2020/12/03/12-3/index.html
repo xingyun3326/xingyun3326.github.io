@@ -223,7 +223,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="伪协议"><a href="#伪协议" class="headerlink" title="伪协议"></a>伪协议</h1><h2 id="PHP伪协议有哪些"><a href="#PHP伪协议有哪些" class="headerlink" title="PHP伪协议有哪些"></a>PHP伪协议有哪些</h2><p>PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数<code>include()</code>和<code>include_once()</code>两个的利用情况：</p>
+        
+          
+            <h1 id="伪协议"><a href="#伪协议" class="headerlink" title="伪协议"></a>伪协议</h1><h2 id="PHP伪协议有哪些"><a href="#PHP伪协议有哪些" class="headerlink" title="PHP伪协议有哪些"></a>PHP伪协议有哪些</h2><p>PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数<code>include()</code>和<code>include_once()</code>两个的利用情况：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">file:// — 访问本地文件系统</span><br><span class="line">http:// — 访问 HTTP(s) 网址</span><br><span class="line">ftp:// — 访问 FTP(s) URLs</span><br><span class="line">php:// — 访问各个输入/输出流（I/O streams）</span><br><span class="line">zlib:// — 压缩流</span><br><span class="line">data:// — 数据（RFC 2397）</span><br><span class="line">glob:// — 查找匹配的文件路径模式</span><br><span class="line">phar:// — PHP 归档</span><br><span class="line">ssh2:// — Secure Shell 2</span><br><span class="line">rar:// — RAR</span><br><span class="line">expect:// — 处理交互式的流</span><br></pre></td></tr></table></figure>
 <h2 id="PHP伪协议能否使用"><a href="#PHP伪协议能否使用" class="headerlink" title="PHP伪协议能否使用"></a>PHP伪协议能否使用</h2><p>php.ini配置文件中的<code>allow_url_include</code>和<code>allow_url_fopen</code>这两个设置，决定了PHP伪协议能否使用。<br><code>allow_url_include</code>默认为Off，而<code>allow_url_fopen</code>一直是On的，<br>若打开<code>allow_url_include</code>，容易出现文件远程包含漏洞。<br>1.<code>php://filter</code>读取源代码并进行base64编码输出，不然会直接当做php代码执行就看不到源代码内容了。在双off的情况下也可以正常使用；<br>2.仅<code>php://input</code>、 <code>php://stdin</code>、 <code>php://memory</code> 和 <code>php://temp</code> 需要开启allow_url_include；<br><code>php://stdin</code>、<code>php://stdout</code> 和 <code>php://stderr</code> 允许直接访问 PHP 进程相应的输入或者输出流。<code>php://stdin</code> 是只读的， <code>php://stdout</code> 和 <code>php://stderr</code> 是只写的。<br>3.<code>php:// —</code> 访问各个输入/输出流，不需要开启<code>allow_url_fopen</code><br>4.file://协议是访问本地文件，也不受<code>allow_url_include</code>和<code>allow_url_fopen</code>的影响。</p>
 <h2 id="PHP伪协议的具体使用"><a href="#PHP伪协议的具体使用" class="headerlink" title="PHP伪协议的具体使用"></a>PHP伪协议的具体使用</h2><h3 id="1-php-协议"><a href="#1-php-协议" class="headerlink" title="1.php://协议"></a>1.<em>php://协议</em></h3><table>
@@ -317,7 +319,8 @@
 <h4 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h4><p>file:// 文件系统是 PHP 使用的默认封装协议，展现了本地文件系统。当指定了一个相对路径（不以/、、\或 Windows 盘符开头的路径）提供的路径将基于当前的工作目录。在很多情况下是脚本所在的目录，除非被修改了。使用 CLI 的时候，目录默认是脚本被调用时所在的目录。在某些函数里，例如 <code>fopen()</code> 和 <code>file_get_contents()</code>，<code>include_path</code> 会可选地搜索，也作为相对的路径</p>
 <h4 id="示例：-1"><a href="#示例：-1" class="headerlink" title="示例："></a>示例：</h4><p>暂时没有</p>
 
-      
+          
+        
 <!---->
 <!-- 添加版权声明 -->
       
