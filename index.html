@@ -215,11 +215,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-          
-            <p>#QQ轰炸器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;windows.h&gt;</span><br><span class="line">int main()&#123;</span><br><span class="line">	int i;</span><br><span class="line">	char name[100];</span><br><span class="line">	printf(&quot;目标：&quot;);</span><br><span class="line">	scanf(&quot;%s&quot;,&amp;name);</span><br><span class="line">	printf(&quot;次数：&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;,&amp;i);</span><br><span class="line">	HWND H &#x3D; FindWindow(0,name);	&#x2F;&#x2F;寻找对话框 </span><br><span class="line">	while(i--&gt;0)&#123;</span><br><span class="line">		SendMessage(H,WM_PASTE,0,0);	&#x2F;&#x2F;粘贴 </span><br><span class="line">		SendMessage(H,WM_KEYDOWN,VK_RETURN,0);&#x2F;&#x2F;回车 </span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
-<p>使用之前要先复制内容。</p>
-
+          		<p>#QQ轰炸器</p>
           
         
 <!---->
