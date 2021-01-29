@@ -63,7 +63,7 @@
 		</nav>
 		<!--添加左侧显示总文章数-->
 		<nav>
-			总文章数 13
+			总文章数 14
 		</nav>
 		<!--添加完成-->
 		<nav class="header-smart-menu">
@@ -165,6 +165,122 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-12-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/02/12-2/">base64原理</a>
+    </h1>
+  
+
+        
+        <!--添加起始处-->
+
+<!--添加结束-->
+<a href="/2020/12/02/12-2/" class="archive-article-date">
+  	<time datetime="2020-12-02T12:47:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-02</time>
+</a>
+
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">188字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+</div>
+
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          
+            <h1 id="base64编码原理"><a href="#base64编码原理" class="headerlink" title="base64编码原理"></a>base64编码原理</h1><p>把原字符对照base64对照表转化为二进制（一个字符对应一个字节，即8位。）把3个8位字节（3<em>8=24）转化为4个6位的字节（4</em>6=24），之后在每个6位的前面补两个0，形成8位，即一个字节。再将得到的二进制转化为十进制之后得到对应的字符。所以base64加密过后的内容比原来的大三分之一。<br>举例：<br>加密“ace”，</p>
+<p>1.ace转化为二进制为：‭01100001‬ ‭01100011‬ ‭01100101‬，<br>2.转化为base64的四字节六位：011000 01‬‭0110 0011‬01 100101‬，<br>3.所以高位补00后变为：00011000 0001‬‭0110 000011‬01 00100101‬，<br>4.转化为十进制：24 22 13 37，<br>5.查Base64对照表（默认版本RFC2045）：<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/DqK8x0"><img src="https://img-blog.csdnimg.cn/img_convert/2b1b43b12d28b554f20f9580b65f4951.png" alt="DqK8x0.png"></a></p>
+
+          
+        
+<!---->
+<!-- 添加版权声明 -->
+      
+        
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+      <!--添加完成-->
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/各种编码//" class="article-tag-list-link color5">各种编码</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/02/12-2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-12-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
