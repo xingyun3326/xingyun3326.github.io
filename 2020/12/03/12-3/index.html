@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://xingyun3326.github.io">
   <title>PHP伪协议 | xingyun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="伪协议PHP伪协议有哪些PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数include()和include_once()两个的利用情况： 1234567891011file:&#x2F;&#x2F; — 访问本地文件系统http:&#x2F;&#x2F; — 访问 HTTP(s) 网址ftp:&#x2F;&#x2F; — 访问 FTP(s) URLsphp:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）zlib:&#x2F;&#x2F; — 压缩流da">
+  <meta name="description" content="伪协议PHP伪协议有哪些PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数include()和include_once()两个的利用情况： 1234567891011file:&#x2F;&#x2F; — 访问本地文件系统http:&#x2F;&#x2F; — 访问 HTTP(s) 网址ftp:&#x2F;&#x2F; — 访问 FTP(s) URLsphp:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）zlib:&#x2F;&#x2F; — 压缩流d">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP伪协议">
 <meta property="og:url" content="http://xingyun3326.github.io/2020/12/03/12-3/index.html">
 <meta property="og:site_name" content="xingyun">
-<meta property="og:description" content="伪协议PHP伪协议有哪些PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数include()和include_once()两个的利用情况： 1234567891011file:&#x2F;&#x2F; — 访问本地文件系统http:&#x2F;&#x2F; — 访问 HTTP(s) 网址ftp:&#x2F;&#x2F; — 访问 FTP(s) URLsphp:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）zlib:&#x2F;&#x2F; — 压缩流da">
+<meta property="og:description" content="伪协议PHP伪协议有哪些PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数include()和include_once()两个的利用情况： 1234567891011file:&#x2F;&#x2F; — 访问本地文件系统http:&#x2F;&#x2F; — 访问 HTTP(s) 网址ftp:&#x2F;&#x2F; — 访问 FTP(s) URLsphp:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）zlib:&#x2F;&#x2F; — 压缩流d">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/img_convert/3b2ca4d05ccd9042e84dddfe76e5cbec.png">
 <meta property="article:published_time" content="2020-12-03T06:59:23.000Z">
-<meta property="article:modified_time" content="2020-12-15T03:31:42.000Z">
+<meta property="article:modified_time" content="2021-01-31T09:51:34.354Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/img_convert/3b2ca4d05ccd9042e84dddfe76e5cbec.png">
@@ -225,7 +225,8 @@
       
         
           
-            <h1 id="伪协议"><a href="#伪协议" class="headerlink" title="伪协议"></a>伪协议</h1><h2 id="PHP伪协议有哪些"><a href="#PHP伪协议有哪些" class="headerlink" title="PHP伪协议有哪些"></a>PHP伪协议有哪些</h2><p>PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数<code>include()</code>和<code>include_once()</code>两个的利用情况：</p>
+            <a id="more"></a>
+<h1 id="伪协议"><a href="#伪协议" class="headerlink" title="伪协议"></a>伪协议</h1><h2 id="PHP伪协议有哪些"><a href="#PHP伪协议有哪些" class="headerlink" title="PHP伪协议有哪些"></a>PHP伪协议有哪些</h2><p>PHP伪协议事实上就是支持的协议与封装协议（12种），基于函数<code>include()</code>和<code>include_once()</code>两个的利用情况：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">file:// — 访问本地文件系统</span><br><span class="line">http:// — 访问 HTTP(s) 网址</span><br><span class="line">ftp:// — 访问 FTP(s) URLs</span><br><span class="line">php:// — 访问各个输入/输出流（I/O streams）</span><br><span class="line">zlib:// — 压缩流</span><br><span class="line">data:// — 数据（RFC 2397）</span><br><span class="line">glob:// — 查找匹配的文件路径模式</span><br><span class="line">phar:// — PHP 归档</span><br><span class="line">ssh2:// — Secure Shell 2</span><br><span class="line">rar:// — RAR</span><br><span class="line">expect:// — 处理交互式的流</span><br></pre></td></tr></table></figure>
 <h2 id="PHP伪协议能否使用"><a href="#PHP伪协议能否使用" class="headerlink" title="PHP伪协议能否使用"></a>PHP伪协议能否使用</h2><p>php.ini配置文件中的<code>allow_url_include</code>和<code>allow_url_fopen</code>这两个设置，决定了PHP伪协议能否使用。<br><code>allow_url_include</code>默认为Off，而<code>allow_url_fopen</code>一直是On的，<br>若打开<code>allow_url_include</code>，容易出现文件远程包含漏洞。<br>1.<code>php://filter</code>读取源代码并进行base64编码输出，不然会直接当做php代码执行就看不到源代码内容了。在双off的情况下也可以正常使用；<br>2.仅<code>php://input</code>、 <code>php://stdin</code>、 <code>php://memory</code> 和 <code>php://temp</code> 需要开启allow_url_include；<br><code>php://stdin</code>、<code>php://stdout</code> 和 <code>php://stderr</code> 允许直接访问 PHP 进程相应的输入或者输出流。<code>php://stdin</code> 是只读的， <code>php://stdout</code> 和 <code>php://stderr</code> 是只写的。<br>3.<code>php:// —</code> 访问各个输入/输出流，不需要开启<code>allow_url_fopen</code><br>4.file://协议是访问本地文件，也不受<code>allow_url_include</code>和<code>allow_url_fopen</code>的影响。</p>
 <h2 id="PHP伪协议的具体使用"><a href="#PHP伪协议的具体使用" class="headerlink" title="PHP伪协议的具体使用"></a>PHP伪协议的具体使用</h2><h3 id="1-php-协议"><a href="#1-php-协议" class="headerlink" title="1.php://协议"></a>1.<em>php://协议</em></h3><table>
